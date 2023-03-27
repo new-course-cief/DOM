@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeColor()"> click here to change background color</button>
+    <button onclick="applyImage()"> click here to apply background image</button>
+    <script>
+        function showAlert(){
+            alert("This is the alert");
+        }
+        function changeColor(){
+            document.body.style.backgroundColor = "red"
+            document.body.style.backgroundImage = "none"
+        }
+        function applyImage(){
+            document.body.style.backgroundImage = 'url(eveningA3.jpg)'
+            document.body.style.backgroundColor = "none"
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="button-container"><button onclick="countIt()" id="button"> click here to count</button></div>
+    <p id="students">numero en clase</p>
+    <script>
+        let counter = 0;
+        function countIt(){
+          let students = document.getElementById("students");
+          counter++;
+          students.innerHTML = counter
+          console.log(counter)
+          if(counter >= 15){
+            alert("stop")
+            counter=0
+          }
+        }
+    </script>
+</body>
+</html>
